@@ -1,0 +1,49 @@
+		body {					
+				padding: 20px; /*space between the margin and the content*/
+			}
+			p {
+				font-size: 20px;
+				color: brown;
+			}
+			label {
+				padding-left:26px; 
+    			width:125px;
+    			text-transform: uppercase;
+    			display:inline-block
+			}
+			div {
+				font-size: 15px;
+				display:inline-block;
+				border: 2px solid brown;
+				width:480px;
+				padding: 10px;
+				border-radius: 5px; /*to curve the corners*/
+				margin: 5px;
+				background-color:#D2B48C;
+				font-family: Calibri;
+			}
+			.submit {
+				display:inline-block;
+				border: none;
+				width:480px;
+				padding: 10px;
+			}
+			input {
+				width:200px;
+    			display:inline-block
+			}
+			button {
+				padding-left: 2px;
+				width: 75px;
+				height: 40px;
+				border: 1px solid black;
+				border-radius: 5px;
+				color: white;
+				background-color: black;
+				display: block;
+				margin: auto;
+			}
+			button:hover {
+				background-color: #4CAF50; /* Green */ /*change the color of the button on hovering*/
+			}
+			
