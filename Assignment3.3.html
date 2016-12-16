@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--Assignment 3 that illustrates use of CSS-->
+    <!--<title> tag displays title of the page-->
+		<title>Card Payment</title>
+		<meta name="description" content="Web Assignment">
+		<meta name="keywords" content="CSS, Card Payment page">
+		<meta name="author" content="Shanthee Sampath">
+		<!--Referring to external style sheet-->
+    <link rel="stylesheet" type="text/css" href="Assignment3.3.css" />
+    
+	</head>
+	<!--beginning body-->
+	<body background="bg.jpeg" width=250px>
+		<!--beginning form-->
+		<form name="form1" action="action.php" method="get">
+			<p>Step 1: Your details</p>
+			<!-- Marking all inputs in the div-->
+			<!--Personal details-->
+      <div>
+				<label name="name_label">Name</label>
+				<input type="text" value="First and last name" name="name_input" />
+			</div>
+			<br />
+			<div>
+				<label name="email_label">Email</label>
+				<input type="email" name="email_input" value="example@domain.com"/>
+			</div>
+			<br />
+			<div>
+				<label name="phone_label">Phone</label>
+				<input type="text" name="tel_input" value="e.g. +447500" />
+			</div>
+      <!--End of personal details-->
+			<p>Step 2: Delivery Details</p>
+      <!--Delivery Details block-->
+			<div>
+				<label name="address_label">Address</label>
+				<textarea rows=6 cols=30 name="address_input"></textarea>
+			</div>
+			<br />
+			<div>
+				<label name="postcode_label">Post Code</label>
+				<input type="text" name="postcode_input" />
+			</div>
+			<br />
+			<div>
+				<label name="country_label">Country</label>
+				<input type="text" name="country_input" />
+			</div>
+      <!-- End of delivery details-->
+			<p>Step 3: Card Details</p>
+      <!--Beginning of Card Details Block-->
+			<div>
+				<label name="cardtype_label">Card Type</label>
+				<input type="radio" name="cardtype_input" value="VISA" style="width:25px"/><img src="http://vignette3.wikia.nocookie.net/fallout/images/d/d6/Visa.jpg/revision/latest/scale-to-width-down/614?cb=20130731234236" width=25px height=15px /> VISA
+				<input type="radio" name="cardtype_input" value="AmEx" style="width:25px"/><img src="https://static1.squarespace.com/static/5204ebf6e4b04eea634725cd/52619398e4b0426183af5ab0/52619398e4b0426183af5ab1/1388184218616/amex.jpg?format=300w" width=25px height=15px />AmEx
+				<input type="radio" name="cardtype_input" value="MasterCard" style="width:25px"/><img src="http://vignette2.wikia.nocookie.net/logopedia/images/2/21/27007-mastercard.jpg/revision/latest?cb=20101224140159" width=25px height=15px />MasterCard
+			</div>
+			<br />
+			<div>
+				<label name="cardnumber_label">Card Number</label>
+				<input type="text" name="cardnumber_input" />
+			</div>
+			<br />
+			<div>
+				<label name="securitycode_label">Security Code</label>
+				<input type="text" name="securitycode_input" />
+			</div>
+			<br />
+			<div>
+				<label name="cardname_label">Name on card</label>
+				<input type="text" name="cardname" />
+			</div>
+			<br/>
+			<span class="submit">
+				<button type="submit" name="submit">BUY IT!</button>
+			</span>
+      <!--End of card Details block-->
+		</form>
+    <!-- form ends-->
+	</body>
+</html>
